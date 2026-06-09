@@ -1,6 +1,5 @@
-# Data Analytics Project
-
-## Overview
+# Customer Shopping Behavior Analysis
+## 1. Project Overview
 
 This project demonstrates an end-to-end data analytics workflow, from data collection and preparation to visualization and reporting. The objective is to extract meaningful insights from a dataset using Python, SQL, and Power BI, then communicate findings through a professional report and presentation.
 
@@ -15,7 +14,7 @@ Key activities include:
 
 ---
 
-## Dataset
+## 2. Dataset Summary
 
 **Dataset Name:** *[Insert Dataset Name]*
 
