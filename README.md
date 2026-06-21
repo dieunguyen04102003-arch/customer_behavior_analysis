@@ -16,19 +16,26 @@ Key activities include:
 
 ## 2. Dataset Summary
 
-**Dataset Name:** *[Insert Dataset Name]*
-
-**Source:** *[Insert Source or Link]*
+**Dataset Name:** customer_behavior.xlsx
 
 **Description:**
-The dataset contains information related to *[business domain, e.g., sales, customers, finance, healthcare, etc.]* and is used to identify trends, patterns, and key performance indicators (KPIs).
+The dataset contains customer transaction data from an e-commerce platform, including:
+- Customer demographics (gender, subscription status)
+- Purchase behavior (amount, category, discount usage)
+- Shipping preferences (Standard, Express, Free Shipping)
+- Customer feedback (review ratings)
 
 **Key Columns:**
-
-* `Column 1`
-* `Column 2`
-* `Column 3`
-* `Column 4`
+| Column | Description |
+| :--- | :--- |
+| `customer_id` | Unique customer identifier |
+| `gender` | Male / Female |
+| `subscription_status` | Yes / No |
+| `category` | Accessories / Clothing / Footwear / Outerwear |
+| `purchase_amount` | Transaction value in USD |
+| `discount_applied` | Yes / No |
+| `shipping_type` | Standard / Express / Free Shipping / Store Pickup |
+| `review_rating` | 1-5 scale |
 
 ---
 
@@ -39,11 +46,9 @@ The dataset contains information related to *[business domain, e.g., sales, cust
 | Python                          | Data loading, cleaning, and EDA     |
 | Pandas                          | Data manipulation                   |
 | NumPy                           | Numerical operations                |
-| Matplotlib / Seaborn            | Data visualization                  |
 | PostgreSQL / MySQL / SQL Server | Data querying and analysis          |
 | Power BI                        | Dashboard creation                  |
-| Microsoft Excel                 | Data validation and review          |
-| Gamma                           | Presentation creation               |
+| Microsoft Excel                 | Data validation and rev             |
 | Git & GitHub                    | Version control and project sharing |
 
 ---
@@ -56,21 +61,14 @@ The dataset contains information related to *[business domain, e.g., sales, cust
 * Checked data types and structure
 * Identified missing values and duplicates
 
-### 2. Exploratory Data Analysis (EDA)
-
-* Generated summary statistics
-* Analyzed distributions and trends
-* Created visualizations to identify patterns
-* Explored relationships between variables
-
-### 3. Data Cleaning
+### 2. Data Cleaning
 
 * Handled missing values
 * Removed duplicate records
 * Corrected inconsistent data formats
 * Standardized column names and values
 
-### 4. SQL Analysis
+### 3. SQL Analysis
 
 Executed SQL queries to:
 
@@ -113,7 +111,8 @@ Developed an interactive dashboard featuring:
 
 **Dashboard Preview:**
 
-> Add screenshots of your Power BI dashboard here.
+> <img width="1315" height="720" alt="image" src="https://github.com/user-attachments/assets/c7558b83-4589-4e9e-9796-809dba5716cc" />
+
 
 ---
 
@@ -124,12 +123,9 @@ Developed an interactive dashboard featuring:
 > - Only **27%** of customers are Subscribers, yet they account for **62%** of all discount usage.
 > - Non-subscribers (73% of the base) use only **37%** of discounts but have nearly identical average order values (**$58 vs $59**).
 
-<div style="display: flex; gap: 10px;">
-  <b> <img width="654" height="366" alt="image" src="https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef" width="48%"/>
-  </b
-  <img width="368" height="266" alt="image" src="https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225" width="48%" />
-</div>
-
+| SQL Query | Power BI Dashboard |
+|:---:|:---:|
+| ![Discount SQL](https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef) | ![Discount Dashboard](https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225) |
 > **⚠️ Problem:** 
 > Discounts are heavily favoring Subscribers, but they aren't driving higher spending. This is essentially "burning" profit margins on our most loyal customers without generating extra revenue.
 
@@ -139,101 +135,18 @@ Developed an interactive dashboard featuring:
 ### 2. Gender x Category: "Male Dominates Accessories"
 
 
-> **🔥 Key Finding:** Contrary to the belief that accessories are "for women," **Male customers dominate** with 69% of customers and 71% of revenue. 
-<img width="1443" height="510" alt="image" src="https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768" />
-<img width="1445" height="516" alt="image" src="https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135" />
-
-
+> **🔥 Key Finding:** Contrary to the belief that accessories are "for women," **Male customers dominate** with 69% of customers and 71% of revenue.
+> | Metric | Male + Accessories | Female + Accessories |
+| :--- | :--- | :--- |
+| Customers | **848 (69%)** | 390 (31%) |
+| Total Revenue | **~$50K (71%)** | ~$20K (29%) |
+| Avg Revenue / Order | $59.41 | **$60.76** |
+| Total Sales | **800 (67%)** | 400 (33%) |
+**Power BI Visualizations:**
+| Male + Accessories | Female + Accessories |
+|:---:|:---:|
+| ![Male](https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768) | ![Female](https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135) |
 > **🚀 Action:**
 > - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
 > - **For Female (Upsell):** Leverage their higher AOV ($60.76) by creating bundle deals to increase order value.
-### Business Impact
 
-* Improved understanding of key metrics.
-* Enabled data-driven decisions.
-* Simplified reporting through visualization.
-
----
-
-## Deliverables
-
-* Python Analysis Notebook (`.ipynb`)
-* SQL Scripts (`.sql`)
-* Power BI Dashboard (`.pbix`)
-* Analytical Report (`.pdf`)
-* Gamma Presentation (`.pptx` or share link)
-
----
-
-## Project Structure
-
-```text
-Data-Analytics-Project/
-│
-├── data/
-│   └── dataset.csv
-│
-├── notebooks/
-│   └── analysis.ipynb
-│
-├── sql/
-│   └── queries.sql
-│
-├── dashboard/
-│   └── dashboard.pbix
-│
-├── reports/
-│   └── report.pdf
-│
-├── presentation/
-│   └── gamma_presentation.pptx
-│
-└── README.md
-```
-
----
-
-## How to Run
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the Analysis
-
-```bash
-jupyter notebook
-```
-
-Open the notebook in the `notebooks/` folder and execute all cells.
-
-### 4. Run SQL Queries
-
-Connect to your database and execute the scripts inside the `sql/` folder.
-
-### 5. Open Dashboard
-
-Launch the `.pbix` file using Power BI Desktop.
-
----
-
-## Author
-
-**Your Name**
-Data Analyst | SQL | Python | Power BI
-
-LinkedIn: *[Your LinkedIn Profile]*
-Portfolio: *[Your Portfolio Link]*
-
----
-
-⭐ If you found this project useful, consider giving it a star on GitHub.
