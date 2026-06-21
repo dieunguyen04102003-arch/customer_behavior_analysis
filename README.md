@@ -126,6 +126,7 @@ Developed an interactive dashboard featuring:
 | SQL Query | Power BI Dashboard |
 |:---:|:---:|
 | ![Discount SQL](https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef) | ![Discount Dashboard](https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225) |
+
 > **⚠️ Problem:** 
 > Discounts are heavily favoring Subscribers, but they aren't driving higher spending. This is essentially "burning" profit margins on our most loyal customers without generating extra revenue.
 
@@ -134,9 +135,8 @@ Developed an interactive dashboard featuring:
 
 ### 2. Gender x Category: "Male Dominates Accessories"
 
-
 > **🔥 Key Finding:** Contrary to the belief that accessories are "for women," **Male customers dominate** with 69% of customers and 71% of revenue.
-> | Metric | Male + Accessories | Female + Accessories |
+| Metric | Male + Accessories | Female + Accessories |
 | :--- | :--- | :--- |
 | Customers | **848 (69%)** | 390 (31%) |
 | Total Revenue | **~$50K (71%)** | ~$20K (29%) |
