@@ -152,7 +152,7 @@ Developed an interactive dashboard featuring:
 ![Male Accessories](https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768)
 
 **Female + Accessories:**
-![Female Accessories](https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135)
+![Female Accessories](https://github.com/user-attachments/assets/cdf7f496-cffc-4aa0-84f8-2f6d892e6470)
 
 > **🚀 Action:**
 > - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
