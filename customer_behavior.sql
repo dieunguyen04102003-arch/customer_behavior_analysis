@@ -76,3 +76,14 @@ select age_group, sum(purchase_amount) as total_revenue
 from customer_behavior
 group by age_group
 order by total_revenue desc;
+
+--Q11. Discount usage analysis by subscription status
+select  subscription_status, 
+		round(avg(purchase_amount),2) as avg_revenue, 
+		sum(purchase_amount) as total_revenue,
+		round(100* count(*) / sum(count(*)) over (),2) 
+			as per_of_used_discount
+from customer_behavior
+where discount_applied = 'Yes'
+group by subscription_status
+order by total_revenue desc;
