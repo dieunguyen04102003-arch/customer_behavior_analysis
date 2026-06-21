@@ -133,7 +133,6 @@ Developed an interactive dashboard featuring:
 > **🚀 Recommendation:** 
 > Shift Subscriber incentives from **Discounts** to **Loyalty Points**. This maintains retention while protecting profit margins. Launch a "Free Shipping" campaign specifically targeting the **73% Non-subscribers** to convert them into members.
 
-### 2. Gender x Category: "Male Dominates Accessories"
 
 ### 2. Gender x Category: "Male Dominates Accessories"
 
