@@ -119,12 +119,8 @@ Developed an interactive dashboard featuring:
 
 ## Results & Insights
 
-Key findings from the analysis:
+<img width="887" height="311" alt="image" src="https://github.com/user-attachments/assets/9eecb0d6-f51b-4bef-87c9-e471fadfa227" />
 
-* Identified major drivers of performance.
-* Discovered trends and seasonal patterns.
-* Highlighted high-performing segments.
-* Provided actionable recommendations for decision-making.
 
 ### Business Impact
 
