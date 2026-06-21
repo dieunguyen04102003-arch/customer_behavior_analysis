@@ -148,10 +148,11 @@ Developed an interactive dashboard featuring:
 
 **Power BI Visualizations:**
 
-| Male + Accessories | Female + Accessories |
-| :---: | :---: |
-| ![Male Accessories](https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768) | ![Female Accessories](https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135) |
+**Male + Accessories:**
+![Male Accessories](https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768)
 
+**Female + Accessories:**
+![Female Accessories](https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135)
 
 > **🚀 Action:**
 > - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
