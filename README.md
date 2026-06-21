@@ -135,10 +135,17 @@ Developed an interactive dashboard featuring:
 > **🚀 Recommendation:** 
 > Shift Subscriber incentives from **Discounts** to **Loyalty Points**. This maintains retention while protecting profit margins. Launch a "Free Shipping" campaign specifically targeting the **73% Non-subscribers** to convert them into members.
 
+### 2. Gender x Category: "Male Dominates Accessories"
 
 
+> **🔥 Key Finding:** Contrary to the belief that accessories are "for women," **Male customers dominate** with 69% of customers and 71% of revenue. 
+<img width="1443" height="510" alt="image" src="https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768" />
+<img width="1445" height="516" alt="image" src="https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135" />
 
 
+> **🚀 Action:**
+> - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
+> - **For Female (Upsell):** Leverage their higher AOV ($60.76) by creating bundle deals to increase order value.
 ### Business Impact
 
 * Improved understanding of key metrics.
