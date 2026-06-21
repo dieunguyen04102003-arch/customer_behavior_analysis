@@ -118,10 +118,22 @@ Developed an interactive dashboard featuring:
 ---
 
 ## Results & Insights
+### 1. The Discount Paradox: Subscribers are overusing promotions
+
+> **📊 Finding:** 
+> - Only **27%** of customers are Subscribers, yet they account for **62%** of all discount usage.
+> - Non-subscribers (73% of the base) use only **37%** of discounts but have nearly identical average order values (**$58 vs $59**).
+
 <div style="display: flex; gap: 10px;">
   <img width="654" height="366" alt="image" src="https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef" width="48%"/>
   <img width="368" height="266" alt="image" src="https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225" width="48%" />
 </div>
+
+> **⚠️ Problem:** 
+> Discounts are heavily favoring Subscribers, but they aren't driving higher spending. This is essentially "burning" profit margins on our most loyal customers without generating extra revenue.
+
+> **🚀 Recommendation:** 
+> Shift Subscriber incentives from **Discounts** to **Loyalty Points**. This maintains retention while protecting profit margins. Launch a "Free Shipping" campaign specifically targeting the **73% Non-subscribers** to convert them into members.
 
 
 
