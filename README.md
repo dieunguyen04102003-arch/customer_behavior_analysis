@@ -135,17 +135,24 @@ Developed an interactive dashboard featuring:
 
 ### 2. Gender x Category: "Male Dominates Accessories"
 
+### 2. Gender x Category: "Male Dominates Accessories"
+
 > **🔥 Key Finding:** Contrary to the belief that accessories are "for women," **Male customers dominate** with 69% of customers and 71% of revenue.
+
 | Metric | Male + Accessories | Female + Accessories |
 | :--- | :--- | :--- |
-| Customers | **848 (69%)** | 390 (31%) |
-| Total Revenue | **~$50K (71%)** | ~$20K (29%) |
-| Avg Revenue / Order | $59.41 | **$60.76** |
-| Total Sales | **800 (67%)** | 400 (33%) |
+| Customers | 848 (69%) | 390 (31%) |
+| Total Revenue | ~$50K (71%) | ~$20K (29%) |
+| Avg Revenue / Order | $59.41 | $60.76 |
+| Total Sales | 800 (67%) | 400 (33%) |
+
 **Power BI Visualizations:**
+
 | Male + Accessories | Female + Accessories |
-|:---:|:---:|
-| ![Male](https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768) | ![Female](https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135) |
+| :---: | :---: |
+| ![Male Accessories](https://github.com/user-attachments/assets/37a8ed50-f24c-4e56-8035-3385d45b0768) | ![Female Accessories](https://github.com/user-attachments/assets/b686f828-160d-43e3-abe1-fb2b98026135) |
+
+
 > **🚀 Action:**
 > - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
 > - **For Female (Upsell):** Leverage their higher AOV ($60.76) by creating bundle deals to increase order value.
