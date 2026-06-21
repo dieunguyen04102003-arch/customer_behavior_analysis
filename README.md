@@ -119,8 +119,7 @@ Developed an interactive dashboard featuring:
 
 ## Results & Insights
 
-<img width="887" height="311" alt="image" src="https://github.com/user-attachments/assets/9eecb0d6-f51b-4bef-87c9-e471fadfa227" />
-<img width="368" height="266" alt="image" src="https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225" />
+<img width="890" height="382" alt="image" src="https://github.com/user-attachments/assets/77a491a4-c9d2-4755-8020-f881da0945f9" /><img width="368" height="266" alt="image" src="https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225" />
 
 
 
