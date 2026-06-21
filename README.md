@@ -125,7 +125,8 @@ Developed an interactive dashboard featuring:
 > - Non-subscribers (73% of the base) use only **37%** of discounts but have nearly identical average order values (**$58 vs $59**).
 
 <div style="display: flex; gap: 10px;">
-  <img width="654" height="366" alt="image" src="https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef" width="48%"/>
+  <b> <img width="654" height="366" alt="image" src="https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef" width="48%"/>
+  </b
   <img width="368" height="266" alt="image" src="https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225" width="48%" />
 </div>
 
