@@ -1,5 +1,5 @@
 # Customer Shopping Behavior Analysis
-## 1. Project Overview
+## I. Project Overview
 
 This project demonstrates an end-to-end data analytics workflow, from data collection and preparation to visualization and reporting. The objective is to extract meaningful insights from a dataset using Python, SQL, and Power BI, then communicate findings through a professional report and presentation.
 
@@ -14,7 +14,7 @@ Key activities include:
 
 ---
 
-## 2. Dataset Summary
+## II. Dataset Summary
 
 **Dataset Name:** customer_behavior.xlsx
 
@@ -39,7 +39,7 @@ The dataset contains customer transaction data from an e-commerce platform, incl
 
 ---
 
-## Tools & Technologies
+## III. Tools & Technologies
 
 | Tool                            | Purpose                             |
 | ------------------------------- | ----------------------------------- |
@@ -53,7 +53,7 @@ The dataset contains customer transaction data from an e-commerce platform, incl
 
 ---
 
-## Project Workflow
+## IV. Project Workflow
 
 ### 1. Data Loading
 
@@ -80,11 +80,10 @@ Executed SQL queries to:
 Example:
 
 ```sql
-SELECT category,
-       SUM(sales) AS total_sales
-FROM sales_data
-GROUP BY category
-ORDER BY total_sales DESC;
+SELECT category, SUM(purchase_amount) AS total_revenue 
+FROM customer_behavior 
+GROUP BY category 
+ORDER BY total_revenue DESC;
 ```
 
 ### 5. Power BI Dashboard
@@ -99,7 +98,7 @@ Developed an interactive dashboard featuring:
 
 ---
 
-## Dashboard
+## V. Dashboard
 
 ### Main Features
 
@@ -116,7 +115,7 @@ Developed an interactive dashboard featuring:
 
 ---
 
-## Results & Insights
+## VI. Results & Insights
 ### 1. The Discount Paradox: Subscribers are overusing promotions
 
 > **📊 Finding:** 
@@ -157,3 +156,32 @@ Developed an interactive dashboard featuring:
 > - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
 > - **For Female (Upsell):** Leverage their higher AOV ($60.76) by creating bundle deals to increase order value.
 
+### 3. Product Funnel Optimization Concept (User Journey)
+To align this transactional data with standard Product Analytics Frameworks, we map out the simulated E-commerce funnel below to identify drop-off points:
+
+* **Funnel Stages:** `View Product` ➔ `Add to Cart` ➔ `Purchase (Non-Subscribed)` ➔ `Upgrade to Subscription`
+* **The Subscription Drop-off:** While **73%** of our total active users complete purchases as Non-subscribers, only **27%** convert into Subscribers. 
+* **Product Insight:** Non-subscribers maintain a high Average Order Value (AOV) of **$58**. The friction isn't the price or intent to buy—it's the friction in the subscription onboarding flow.
+* **Growth Action:** Implement a targeted "1-Click Subscription Upgrade" at the checkout success page for Non-subscribers to bridge this gap.
+
+### 4. Proposed Automated Data Alerts (Product Health Monitoring)
+To help the Product & Data teams catch anomalies early and monitor product health daily, we propose setting up the following automated data triggers:
+
+| Alert Trigger | Threshold | Business Reason |
+| :--- | :--- | :--- |
+| **🚨 Subscriber Discount Exploitation** | Over **65%** | Alerts Product Team when promos are burning too much margin on existing loyalists without driving extra basket size. |
+| **📉 Category Rating Drop** | Below **3.5 / 5.0** | Signals potential quality issues, delivery friction, or bugs in specific product pages (e.g., Clothing, Accessories). |
+| **⚠️ High Outlier Order Value** | 3x above average | Detects bulk-buying anomalies, wholesaling behavior, or system payment glitches. |
+
+---
+
+## VII. Conclusion & Future Outlook
+
+### 🎯 Project Conclusion
+This project successfully transitions raw transaction logs into high-value business insights. By discovering the **Discount Paradox** (loyal users consuming margins without increasing order size) and the **Male-dominated Accessories segment**, the analysis provides the Product and Marketing teams with clear, data-backed strategies to optimize revenue and membership conversion.
+
+### 🔮 Future Outlook (Next Steps)
+If given more data and time, the project will be expanded with:
+1. **Predictive Churn Modeling:** Using Python (`scikit-learn`) to build a machine learning model that predicts which subscribers are likely to cancel their membership based on their purchase frequency.
+2. **RFM Customer Segmentation:** Implementing Advanced RFM (Recency, Frequency, Monetary) clustering to divide the user base into distinct micro-segments for personalized email marketing automation.
+3. **Live Data Pipeline:** Migrating the local `.csv` file into a cloud database (e.g., AWS S3 or Google BigQuery) and scheduling automatic daily dashboard refreshes.
