@@ -12,9 +12,9 @@ Key activities include:
 * Building an interactive Power BI dashboard
 * Creating an analytical report
 
-Mapping transactional data into Product Analytics Frameworks to identify user journey drop-offs.
+Mapping transactional data into Product Analytics Frameworks to identify user journey drop-offs. 
+
 Aligning data insights with the Software Development Life Cycle (SDLC) to drive feature prioritization and testing experiments.
----
 
 ## II. Dataset Summary
 
