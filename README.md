@@ -12,6 +12,8 @@ Key activities include:
 * Building an interactive Power BI dashboard
 * Creating an analytical report
 
+Mapping transactional data into Product Analytics Frameworks to identify user journey drop-offs.
+Aligning data insights with the Software Development Life Cycle (SDLC) to drive feature prioritization and testing experiments.
 ---
 
 ## II. Dataset Summary
@@ -152,10 +154,15 @@ Developed an interactive dashboard featuring:
 **Female + Accessories:**
 ![Female Accessories](https://github.com/user-attachments/assets/cdf7f496-cffc-4aa0-84f8-2f6d892e6470)
 
-> **🚀 Action:**
-> - **For Male (Core):** Expand men's product lines (watches, belts, wallets) and focus on retention.
-> - **For Female (Upsell):** Leverage their higher AOV ($60.76) by creating bundle deals to increase order value.
+### 🚀 Action & SDLC Alignment
 
+1. **Feature Implementation (Growth & Retention):**
+   - **For Male (Core):** Recommend the product team to prioritize expanding men's product lines (watches, belts, wallets) on the UI and personalize recommendations.
+   - **For Female (Upsell):** Implement an automated bundle-deal feature at checkout to leverage their higher AOV ($60.76).
+
+2. **Testing Experiment Design (The Discount Paradox):**
+   - **A/B Testing Proposal:** Design an experiment to phase out direct discounts for a test group of Subscribers, replacing them with a Loyalty Points system to evaluate margin recovery without affecting retention.
+   - **Growth Campaign:** Design and launch a targeted "Free Shipping" campaign UI component tailored specifically for the 73% Non-subscribers to test conversion rate uplifts into full subscriptions.
 ### 3. Product Funnel Optimization Concept (User Journey)
 To align this transactional data with standard Product Analytics Frameworks, we map out the simulated E-commerce funnel below to identify drop-off points:
 
