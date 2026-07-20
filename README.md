@@ -1,14 +1,14 @@
 # Customer Shopping Behavior Analysis
 ## I. Business Problem
 
-An e-commerce company wants to understand customer purchasing behavior and evaluate whether its current promotional strategy is effective.
+> An e-commerce company wants to understand customer purchasing behavior and evaluate whether its current promotional strategy is effective.
 
-This project analyzes customer transaction data to answer the following business questions:
+> This project analyzes customer transaction data to answer the following business questions:
 
-Which customer segments contribute the most revenue?
-Are discount campaigns increasing customer spending?
-Which product categories perform best?
-What actions can improve marketing efficiency and customer retention?
+> - Which customer segments contribute the most revenue?
+> - Are discount campaigns increasing customer spending?
+> - Which product categories perform best?
+> - What actions can improve marketing efficiency and customer retention?
 
 Key activities include:
 
@@ -18,10 +18,6 @@ Key activities include:
 * Running SQL queries for business insights
 * Building an interactive Power BI dashboard
 * Creating an analytical report
-
-Mapping transactional data into Product Analytics Frameworks to identify user journey drop-offs. 
-
-Aligning data insights with the Software Development Life Cycle (SDLC) to drive feature prioritization and testing experiments.
 
 ## II. Dataset Summary
 
@@ -53,8 +49,7 @@ The dataset contains customer transaction data from an e-commerce platform, incl
 | Tool                            | Purpose                             |
 | ------------------------------- | ----------------------------------- |
 | Python                          | Data loading, cleaning, and EDA     |
-| Pandas                          | Data manipulation                   |
-| NumPy                           | Numerical operations                |
+| Pandas                          | Data manipulation                   |        
 | PostgreSQL / MySQL / SQL Server | Data querying and analysis          |
 | Power BI                        | Dashboard creation                  |
 | Microsoft Excel                 | Data validation and rev             |
@@ -64,12 +59,23 @@ The dataset contains customer transaction data from an e-commerce platform, incl
 
 ## IV. Project Workflow
 
-### 1. Data Loading
+Business Questions
+      ↓
+Data Understanding
+      ↓
+Data Cleaning
+      ↓
+Exploratory Data Analysis
+      ↓
+SQL Analysis
+      ↓
+Dashboard
+      ↓
+Business Insights
+      ↓
+Recommendations
 
-* Imported dataset into Python
-* Checked data types and structure
-
-### 2. Data Cleaning
+### 1. Data Cleaning
 
 The dataset was prepared before analysis by:
 
@@ -79,7 +85,7 @@ The dataset was prepared before analysis by:
 * Verifying data types
 * Validating data consistency
 
-### 3. SQL Analysis
+### 2. SQL Analysis
 
 SQL was used to answer business questions such as:
 
@@ -98,15 +104,15 @@ GROUP BY category
 ORDER BY total_revenue DESC;
 ```
 
-### 5. Power BI Dashboard
+### 3. Power BI Dashboard
 
-The Power BI dashboard provides an overview of:
+The dashboard provides interactive visualizations for:
 
-* Executive KPI Summary
-* Revenue Analysis
-* Customer Segmentation
-* Discount Performance
-* Product Category Performance
+> - Revenue overview
+> - Customer segmentation
+> - Product category performance
+> - Discount analysis
+> - Key business KPIs
 
 **Dashboard Preview:**
 
@@ -116,7 +122,7 @@ The Power BI dashboard provides an overview of:
 ---
 
 ## V. Key Findings
-### 1. Discount Strategy Is Not Driving Higher Spending
+### 1. Discount Campaigns Show Limited Impact on Customer Spending
 
 > **Business Question:**
 > Are discount campaigns increasing customer spending?
@@ -130,10 +136,10 @@ The Power BI dashboard provides an overview of:
 | ![Discount SQL](https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef) | ![Discount Dashboard](https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225) |
 
 > **Business Impact:**
-> The current promotion strategy may reduce profit margins without encouraging customers to spend more.
+> The company may be spending more on promotions without generating additional revenue.
 
 > **Recommendation:**
-> Consider replacing broad discount campaigns with a loyalty points program while using targeted promotions to attract non-subscribers.
+> Consider replacing broad discount campaigns with a loyalty points program to attract non-subscribers.
 
 
 ### 2. Accessories Generate Strong Revenue from Male Customers
@@ -167,13 +173,17 @@ The Power BI dashboard provides an overview of:
 > Focus product recommendations for male customers while testing bundle promotions for female customers to increase basket size.
 
 
----
+## VI. Business Recommendations
 
-## VI. Business Recommendations**
+> Based on the findings, the company could consider:
 
-> Based on the analysis, the following actions are recommended:
+> - Optimizing discount allocation to improve promotion efficiency.
+> - Introducing a loyalty program to encourage repeat purchases.
+> - Personalizing marketing campaigns based on customer purchasing behavior.
+> - Monitoring promotion performance using key business KPIs.
 
-> - Optimize discount allocation instead of applying promotions broadly.
-> - Develop a loyalty program to improve long-term customer retention.
-> - Personalize marketing campaigns based on customer purchasing behavior.
-> - Monitor promotion performance using key business KPIs.
+
+## VII. Conclusion
+> This project demonstrates a complete data analysis workflow using Python, SQL, and Power BI to transform raw transaction data into business insights.
+
+> The findings highlight opportunities to improve promotional strategies, better understand customer purchasing behavior, and support data-driven decision-making.
