@@ -1,14 +1,14 @@
 # Customer Shopping Behavior Analysis
 ## I. Business Problem
 
-> An e-commerce company wants to understand customer purchasing behavior and evaluate whether its current promotional strategy is effective.
+An e-commerce company wants to understand customer purchasing behavior and evaluate whether its current promotional strategy is effective.
 
-> This project analyzes customer transaction data to answer the following business questions:
+This project analyzes customer transaction data to answer the following business questions:
 
-> - Which customer segments contribute the most revenue?
-> - Are discount campaigns increasing customer spending?
-> - Which product categories perform best?
-> - What actions can improve marketing efficiency and customer retention?
+- Which customer segments contribute the most revenue?
+- Are discount campaigns increasing customer spending?
+- Which product categories perform best?
+- What actions can improve marketing efficiency and customer retention?
 
 Key activities include:
 
@@ -108,11 +108,11 @@ ORDER BY total_revenue DESC;
 
 The dashboard provides interactive visualizations for:
 
-> - Revenue overview
-> - Customer segmentation
-> - Product category performance
-> - Discount analysis
-> - Key business KPIs
+- Revenue overview
+- Customer segmentation
+- Product category performance
+- Discount analysis
+- Key business KPIs
 
 **Dashboard Preview:**
 
@@ -124,32 +124,32 @@ The dashboard provides interactive visualizations for:
 ## V. Key Findings
 ### 1. Discount Campaigns Show Limited Impact on Customer Spending
 
-> **Business Question:**
-> Are discount campaigns increasing customer spending?
+**Business Question:**
+Are discount campaigns increasing customer spending?
 
-> **Finding:** 
-> - Subscribers represent 27% of customers but receive 62% of all discounts.
-> - Their Average Order Value is almost the same as non-subscribers.
+**Finding:** 
+- Subscribers represent 27% of customers but receive 62% of all discounts.
+- Their Average Order Value is almost the same as non-subscribers.
 
 | SQL Query | Power BI Dashboard |
 |:---:|:---:|
 | ![Discount SQL](https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef) | ![Discount Dashboard](https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225) |
 
-> **Business Impact:**
-> The company may be spending more on promotions without generating additional revenue.
+**Business Impact:**
+The company may be spending more on promotions without generating additional revenue.
 
-> **Recommendation:**
-> Consider replacing broad discount campaigns with a loyalty points program to attract non-subscribers.
+**Recommendation:**
+Consider replacing broad discount campaigns with a loyalty points program to attract non-subscribers.
 
 
 ### 2. Accessories Generate Strong Revenue from Male Customers
 
-> **Business Question:**
->Which customer segment contributes the most revenue?
+**Business Question:**
+Which customer segment contributes the most revenue?
 
-> **Finding:**
-> - Male customers account for 71% of accessory revenue.
-> - Female customers have a slightly higher average order value.
+**Finding:**
+- Male customers account for 71% of accessory revenue.
+- Female customers have a slightly higher average order value.
 
 | Metric | Male + Accessories | Female + Accessories |
 | :--- | :--- | :--- |
@@ -166,24 +166,24 @@ The dashboard provides interactive visualizations for:
 **Female + Accessories:**
 ![Female Accessories](https://github.com/user-attachments/assets/cdf7f496-cffc-4aa0-84f8-2f6d892e6470)
 
-> **Business Impact:**
-> Different customer groups show different purchasing patterns, suggesting opportunities for more personalized marketing strategies.
+**Business Impact:**
+Different customer groups show different purchasing patterns, suggesting opportunities for more personalized marketing strategies.
 
-> **Recommendation:**
-> Focus product recommendations for male customers while testing bundle promotions for female customers to increase basket size.
+**Recommendation:**
+Focus product recommendations for male customers while testing bundle promotions for female customers to increase basket size.
 
 
 ## VI. Business Recommendations
 
-> Based on the findings, the company could consider:
+Based on the findings, the company could consider:
 
-> - Optimizing discount allocation to improve promotion efficiency.
-> - Introducing a loyalty program to encourage repeat purchases.
-> - Personalizing marketing campaigns based on customer purchasing behavior.
-> - Monitoring promotion performance using key business KPIs.
+- Optimizing discount allocation to improve promotion efficiency.
+- Introducing a loyalty program to encourage repeat purchases.
+- Personalizing marketing campaigns based on customer purchasing behavior.
+- Monitoring promotion performance using key business KPIs.
 
 
 ## VII. Conclusion
-> This project demonstrates a complete data analysis workflow using Python, SQL, and Power BI to transform raw transaction data into business insights.
+This project demonstrates a complete data analysis workflow using Python, SQL, and Power BI to transform raw transaction data into business insights.
 
-> The findings highlight opportunities to improve promotional strategies, better understand customer purchasing behavior, and support data-driven decision-making.
+The findings highlight opportunities to improve promotional strategies, better understand customer purchasing behavior, and support data-driven decision-making.
