@@ -1,7 +1,14 @@
 # Customer Shopping Behavior Analysis
-## I. Project Overview
+## I. Business Problem
 
-This project demonstrates an end-to-end data analytics workflow, from data collection and preparation to visualization and reporting. The objective is to extract meaningful insights from a dataset using Python, SQL, and Power BI, then communicate findings through a professional report and presentation.
+An e-commerce company wants to understand customer purchasing behavior and evaluate whether its current promotional strategy is effective.
+
+This project analyzes customer transaction data to answer the following business questions:
+
+Which customer segments contribute the most revenue?
+Are discount campaigns increasing customer spending?
+Which product categories perform best?
+What actions can improve marketing efficiency and customer retention?
 
 Key activities include:
 
@@ -61,23 +68,26 @@ The dataset contains customer transaction data from an e-commerce platform, incl
 
 * Imported dataset into Python
 * Checked data types and structure
-* Identified missing values and duplicates
 
 ### 2. Data Cleaning
 
-* Handled missing values
-* Removed duplicate records
-* Corrected inconsistent data formats
-* Standardized column names and values
+The dataset was prepared before analysis by:
+
+* Checking missing values
+* Removing duplicate records
+* Standardizing categorical values
+* Verifying data types
+* Validating data consistency
 
 ### 3. SQL Analysis
 
-Executed SQL queries to:
+SQL was used to answer business questions such as:
 
-* Calculate KPIs
-* Aggregate business metrics
-* Identify top-performing categories
-* Analyze trends and customer behavior
+* Revenue by product category
+* Customer segmentation
+* Discount utilization
+* Average order value
+* Subscription performance
 
 Example:
 
@@ -90,25 +100,13 @@ ORDER BY total_revenue DESC;
 
 ### 5. Power BI Dashboard
 
-Developed an interactive dashboard featuring:
+The Power BI dashboard provides an overview of:
 
-* KPI cards
-* Trend analysis
-* Category performance
-* Regional analysis
-* Filters and slicers for user interaction
-
----
-
-## V. Dashboard
-
-### Main Features
-
-* Executive Summary View
-* Sales & Performance Analysis
-* Customer Insights
-* Trend Monitoring
-* Interactive Filtering
+* Executive KPI Summary
+* Revenue Analysis
+* Customer Segmentation
+* Discount Performance
+* Product Category Performance
 
 **Dashboard Preview:**
 
@@ -117,27 +115,35 @@ Developed an interactive dashboard featuring:
 
 ---
 
-## VI. Results & Insights
-### 1. The Discount Paradox: Subscribers are overusing promotions
+## V. Key Findings
+### 1. Discount Strategy Is Not Driving Higher Spending
 
-> **📊 Finding:** 
-> - Only **27%** of customers are Subscribers, yet they account for **62%** of all discount usage.
-> - Non-subscribers (73% of the base) use only **37%** of discounts but have nearly identical average order values (**$58 vs $59**).
+> **Business Question:**
+> Are discount campaigns increasing customer spending?
+
+> **Finding:** 
+> - Subscribers represent 27% of customers but receive 62% of all discounts.
+> - Their Average Order Value is almost the same as non-subscribers.
 
 | SQL Query | Power BI Dashboard |
 |:---:|:---:|
 | ![Discount SQL](https://github.com/user-attachments/assets/52a9a8bc-563d-4f38-9f83-c25b67d951ef) | ![Discount Dashboard](https://github.com/user-attachments/assets/6248a55a-12f4-43ec-a210-75ff4256d225) |
 
-> **⚠️ Problem:** 
-> Discounts are heavily favoring Subscribers, but they aren't driving higher spending. This is essentially "burning" profit margins on our most loyal customers without generating extra revenue.
+> **Business Impact:**
+> The current promotion strategy may reduce profit margins without encouraging customers to spend more.
 
-> **🚀 Recommendation:** 
-> Shift Subscriber incentives from **Discounts** to **Loyalty Points**. This maintains retention while protecting profit margins. Launch a "Free Shipping" campaign specifically targeting the **73% Non-subscribers** to convert them into members.
+> **Recommendation:**
+> Consider replacing broad discount campaigns with a loyalty points program while using targeted promotions to attract non-subscribers.
 
 
-### 2. Gender x Category: "Male Dominates Accessories"
+### 2. Accessories Generate Strong Revenue from Male Customers
 
-> **🔥 Key Finding:** Contrary to the belief that accessories are "for women," **Male customers dominate** with 69% of customers and 71% of revenue.
+> **Business Question:**
+>Which customer segment contributes the most revenue?
+
+> **Finding:**
+> - Male customers account for 71% of accessory revenue.
+> - Female customers have a slightly higher average order value.
 
 | Metric | Male + Accessories | Female + Accessories |
 | :--- | :--- | :--- |
@@ -154,41 +160,20 @@ Developed an interactive dashboard featuring:
 **Female + Accessories:**
 ![Female Accessories](https://github.com/user-attachments/assets/cdf7f496-cffc-4aa0-84f8-2f6d892e6470)
 
-### 🚀 Action & SDLC Alignment
+> **Business Impact:**
+> Different customer groups show different purchasing patterns, suggesting opportunities for more personalized marketing strategies.
 
-1. **Feature Implementation (Growth & Retention):**
-   - **For Male (Core):** Recommend the product team to prioritize expanding men's product lines (watches, belts, wallets) on the UI and personalize recommendations.
-   - **For Female (Upsell):** Implement an automated bundle-deal feature at checkout to leverage their higher AOV ($60.76).
+> **Recommendation:**
+> Focus product recommendations for male customers while testing bundle promotions for female customers to increase basket size.
 
-2. **Testing Experiment Design (The Discount Paradox):**
-   - **A/B Testing Proposal:** Design an experiment to phase out direct discounts for a test group of Subscribers, replacing them with a Loyalty Points system to evaluate margin recovery without affecting retention.
-   - **Growth Campaign:** Design and launch a targeted "Free Shipping" campaign UI component tailored specifically for the 73% Non-subscribers to test conversion rate uplifts into full subscriptions.
-### 3. Product Funnel Optimization Concept (User Journey)
-To align this transactional data with standard Product Analytics Frameworks, we map out the simulated E-commerce funnel below to identify drop-off points:
-
-* **Funnel Stages:** `View Product` ➔ `Add to Cart` ➔ `Purchase (Non-Subscribed)` ➔ `Upgrade to Subscription`
-* **The Subscription Drop-off:** While **73%** of our total active users complete purchases as Non-subscribers, only **27%** convert into Subscribers. 
-* **Product Insight:** Non-subscribers maintain a high Average Order Value (AOV) of **$58**. The friction isn't the price or intent to buy—it's the friction in the subscription onboarding flow.
-* **Growth Action:** Implement a targeted "1-Click Subscription Upgrade" at the checkout success page for Non-subscribers to bridge this gap.
-
-### 4. Proposed Automated Data Alerts (Product Health Monitoring)
-To help the Product & Data teams catch anomalies early and monitor product health daily, we propose setting up the following automated data triggers:
-
-| Alert Trigger | Threshold | Business Reason |
-| :--- | :--- | :--- |
-| **🚨 Subscriber Discount Exploitation** | Over **65%** | Alerts Product Team when promos are burning too much margin on existing loyalists without driving extra basket size. |
-| **📉 Category Rating Drop** | Below **3.5 / 5.0** | Signals potential quality issues, delivery friction, or bugs in specific product pages (e.g., Clothing, Accessories). |
-| **⚠️ High Outlier Order Value** | 3x above average | Detects bulk-buying anomalies, wholesaling behavior, or system payment glitches. |
 
 ---
 
-## VII. Conclusion & Future Outlook
+## VI. Business Recommendations**
 
-### 🎯 Project Conclusion
-This project successfully transitions raw transaction logs into high-value business insights. By discovering the **Discount Paradox** (loyal users consuming margins without increasing order size) and the **Male-dominated Accessories segment**, the analysis provides the Product and Marketing teams with clear, data-backed strategies to optimize revenue and membership conversion.
+> Based on the analysis, the following actions are recommended:
 
-### 🔮 Future Outlook (Next Steps)
-If given more data and time, the project will be expanded with:
-1. **Predictive Churn Modeling:** Using Python (`scikit-learn`) to build a machine learning model that predicts which subscribers are likely to cancel their membership based on their purchase frequency.
-2. **RFM Customer Segmentation:** Implementing Advanced RFM (Recency, Frequency, Monetary) clustering to divide the user base into distinct micro-segments for personalized email marketing automation.
-3. **Live Data Pipeline:** Migrating the local `.csv` file into a cloud database (e.g., AWS S3 or Google BigQuery) and scheduling automatic daily dashboard refreshes.
+> - Optimize discount allocation instead of applying promotions broadly.
+> - Develop a loyalty program to improve long-term customer retention.
+> - Personalize marketing campaigns based on customer purchasing behavior.
+> - Monitor promotion performance using key business KPIs.
